@@ -8,7 +8,7 @@ import { Server } from '../server.model';
 })
 export class CockpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<Server>();
-  @Output() blueprintCreated = new EventEmitter<Server>();
+  @Output('bpCreated') blueprintCreated = new EventEmitter<Server>();
   newServerName = '';
   newServerContent = '';
 
